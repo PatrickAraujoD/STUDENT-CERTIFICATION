@@ -3,10 +3,12 @@
 Este projeto é um backend desenvolvido em Java para gerenciar o processo de certificação de alunos. Projeto desenvolvido na semana do evento nlw da [rocketseat](https://www.rocketseat.com.br).
 
 ### Funcionalidades
--
--
--
--
+
+- Cadastrar respostas de certificação
+- Verficar se ja possui a certificação
+- Listar alunos com maiores notas
+- Buscar questões por tecnologia
+- Correção de questões
 
 ### Tecnologias Utilizadas
 
@@ -38,20 +40,17 @@ Este projeto é um backend desenvolvido em Java para gerenciar o processo de cer
   ```bash
   server.port=8085 (porta opcional)
   spring.datasource.url=jdbc:user://server:port/nome_do_banco_de_dados
-  spring.datasource.password= password (a senha do seu banco de dados)
-  spring.datasource.username=postgres (user do seu banco de dados)
+  spring.datasource.password= password (senha banco de dados)
+  spring.datasource.username=postgres (user banco de dados)
   spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
   spring.jpa.hibernate.ddl-auto=update (fazer atualizações na base de dados)
   spring.jpa.show-sql=true (serve para olhar os comandos sql - opcional)
 
 3. Executar o programa
    - Instale o intellij
-   - Navegue até a página `CertificationNlwApplication`
+   - Navegue até o arquivo `CertificationNlwApplication`
    - Clique em executar a aplicação
-
-      []()
    
-
 ### Endpoints da API
 
 A API expõe os seguintes endpoints:
